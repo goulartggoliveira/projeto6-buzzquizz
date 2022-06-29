@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="./imgs/buzz-logo.png" rel="icon" type="image/x-icon" />
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-            rel="stylesheet"
-        />
-        <title>BuzzQuizz</title>
-    </head>
-    <body>
-        <header>
-            <nav><h1 style="cursor: pointer">BuzzQuizz</h1></nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./imgs/buzz-logo.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>BuzzQuizz</title>
+  </head>
+  <body>
+    <header>
+      <nav><h1 style="cursor: pointer">BuzzQuizz</h1></nav>
+    </header>
 
-        <!-- tela 1 -->
-        <main>
-            <section class="tela-1">
-                <div class="Quizz">
-                    <div class="descrever">
-                        <p>Você não criou nenhum quizz ainda :(</p>
-                    </div>
-                    <button class="criarQuizz">CriarQuizz</button>
-                </div>
-            </section>
+    <!-- tela 1 -->
+    <main>
+      <section class="tela-1 escondido">
+        <div class="Quizz">
+          <div class="descrever">
+            <p>Você não criou nenhum quizz ainda :(</p>
+          </div>
+          <button class="criarQuizz">CriarQuizz</button>
+        </div>
+      </section>
 
-            <section class="tela-2 escondido"></section>
-            <section class="tela-3 escondido">
-                <div class="title">
-                    <span>Crie seu Quizz </span>
-                </div>
+      <section class="tela-2 escondido"></section>
+      <section class="tela-3">
+        <div class="crie-seu-quizz">
+          <span>Comece pelo começo </span>
+        </div>
 
-                <div class="createInput">
-                    <input
-                        type="text"
-                        minlength="20"
-                        maxlength="65"
-                        spellcheck="true"
-                        placeholder="Título do seu quizz"
-                    />
+        <div class="input-criacao">
+          <input
+            type="text"
+            minlength="20"
+            maxlength="65"
+            spellcheck="true"
+            placeholder="Título do seu quizz"
+          />
 
-                    <input
-                        type="text"
-                        placeholder="URL da imagem do seu quizz"
-                    />
+          <input type="text" placeholder="URL da imagem do seu quizz" />
 
-                    <input
-                        type="number"
-                        placeholder="Quantidade de perguntas do quizz"
-                        name="opções"
-                        min="3"
-                    />
+          <input
+            type="number"
+            placeholder="Quantidade de perguntas do quizz"
+            name="opções"
+            min="3"
+          />
 
-                    <input
-                        type="number"
-                        placeholder="Quantidade de níveis do quizz"
-                        min="3"
-                    />
-                </div>
+          <input
+            type="number"
+            placeholder="Quantidade de níveis do quizz"
+            min="3"
+          />
+        </div>
 
-                <button>Prosseguir pra criar perguntas</button>
-            </section>
-        </main>
+        <button style="cursor: pointer">Prosseguir pra criar perguntas</button>
+      </section>
+    </main>
 
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-        <script src="./script/index.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./script/index.js"></script>
+  </body>
 </html>
