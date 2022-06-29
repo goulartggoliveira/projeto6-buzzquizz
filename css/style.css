@@ -30,6 +30,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #e5e5e5;
     margin-top: 69px;
 }
 
@@ -73,7 +74,6 @@ main {
     margin-bottom: 33px;
     width: 136px;
     height: 40px;
-
     font-size: 21px;
     background-color: #fafafa;
     color: #ec362d;
@@ -111,6 +111,60 @@ strong {
 
 /* TELA 3 */
 
-section .tela-3 {
+section.tela-3 {
+    margin-top: 71px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.crie-seu-quizz span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    color: #000000;
+
+    margin: 71px 0 27px;
+}
+
+.input-criacao {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 4px 0;
+    width: 600px;
+    height: 256px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+.input-criacao input {
+    width: 564px;
+    height: 46px;
+    background: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
+    padding-left: 23px;
+}
+
+.tela-3 button {
+    width: 370px;
+    height: 54px;
+    color: #ffffff;
+    background: #ec362d;
+    border-radius: 15px;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+
+    margin-top: 58px;
 }
