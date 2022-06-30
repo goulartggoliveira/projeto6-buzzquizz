@@ -1,194 +1,195 @@
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 header {
-    width: 100%;
+  width: 100%;
 }
 
 nav {
-    width: 100%;
-    height: 69px;
+  width: 100%;
+  height: 69px;
 
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    background-color: #ec362d;
-    z-index: 2;
+  background-color: #ec362d;
+  z-index: 2;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 37px;
-    font-weight: 700;
-    color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 37px;
+  font-weight: 700;
+  color: #ffffff;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #e5e5e5;
-    margin-top: 69px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  margin-top: 69px;
 }
 
 .tela-1 {
-    margin-top: 77px;
+  margin-top: 77px;
 }
 
 .Quizz {
-    background: #fafafa;
-    border: 1px dashed #d5d5d5;
-    border-radius: 5px;
+  background: #fafafa;
+  border: 1px dashed #d5d5d5;
+  border-radius: 5px;
 
-    width: 1051px;
-    height: 185px;
+  width: 1051px;
+  height: 185px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .meus-quizz {
-    width: 1051px;
-    height: 215px;
-    display: flex;
-    flex-direction: column;
-    background-color: red;
+  width: 1051px;
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
 }
 
 .meus-quizz-strong {
-    display: flex;
-    align-items: center;
-    justify-content: start;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .quizz-feito {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .feito {
-    margin-right: 7px;
+  margin-right: 7px;
 }
 
 .escondido {
-    display: none;
+  display: none;
 }
 
 .descrever {
-    color: #b9b9b9;
+  color: #b9b9b9;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-    width: 250px;
-    height: 107px;
+  width: 250px;
+  height: 107px;
 
-    font-weight: 400;
-    font-size: 20px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .criar-quizz {
-    margin-bottom: 33px;
-    width: 136px;
-    height: 40px;
-    font-size: 21px;
-    background-color: #fafafa;
-    color: #ec362d;
-    border: 1px dashed #ec362d;
-    border-radius: 50px;
+  margin-bottom: 33px;
+  width: 136px;
+  height: 40px;
+  font-size: 21px;
+  background-color: #fafafa;
+  color: #ec362d;
+  border: 1px dashed #ec362d;
+  border-radius: 50px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .todos-quizz {
-    margin-top: 77px;
+  margin-top: 77px;
 }
 
 strong {
-    font-weight: 700;
-    font-size: 18px;
-    font-size: 20px;
-    line-height: 23px;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 20px;
+  line-height: 23px;
 
-    color: #000000;
+  color: #000000;
 }
 
 .caixa-quizz {
-    width: 100%;
+  width: 100%;
 }
 
 .lista-quizz {
-    border-radius: 5px;
-    position: relative;
-    width: 340px;
-    height: 181px;
-    margin-bottom: 14px;
-    cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  width: 340px;
+  height: 181px;
+  margin-bottom: 14px;
+  cursor: pointer;
 }
 
 /* TELA 3 */
 
-section .tela-3 {
-    margin-top: 71px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+section.tela-3-1 {
+  margin-top: 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div.crie-seu-quizz span {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23px;
-    color: #000000;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  color: #000000;
 
-    margin: 71px 0 27px;
+  margin: 71px 0 27px;
 }
 
 .input-criacao {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 4px 0;
-    width: 600px;
-    height: 256px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 4px 0;
+  width: 600px;
+  height: 256px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 .input-criacao input {
-    width: 564px;
-    height: 46px;
-    background: #ffffff;
-    border: 1px solid #d1d1d1;
-    border-radius: 5px;
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: 400;
-    font-size: 19px;
-    padding-left: 23px;
+  width: 564px;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
+  padding-left: 23px;
 }
 
-.tela-3 button {
-    width: 370px;
-    height: 54px;
-    color: #ffffff;
-    background: #ec362d;
-    border-radius: 15px;
-    border: none;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
+.tela-3-1 button {
+  width: 370px;
+  height: 54px;
+  color: #ffffff;
+  background: #ec362d;
+  border-radius: 15px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
 
-    margin-top: 58px;
+  margin-top: 58px;
 }
