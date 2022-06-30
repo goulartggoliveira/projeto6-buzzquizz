@@ -12,6 +12,14 @@ function mensagens(mensagem) {
     infoQuizz = mensagem.data;
 }
 
-const requisição = function criarQuizz() {
+function criarQuizz() {
+    const criarquizz = document.querySelector(".tela-1");
+    const adicionarquizz = document.querySelector(".tela-3-1");
+    criarquizz.classList.add("escondido");
+    adicionarquizz.classList.remove("escondido");
     promise = axios.post(api, infoQuizz);
-};
+}
+
+function recarregarPagina() {
+    window.location.reload();
+}
