@@ -1,8 +1,17 @@
-function obterQuizz() {
-    const promise = axios.get(
-        "https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes"
-    );
+let infoQuizz;
+let api = "https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes";
 
-    promise.then(resposta);
-    promise.catch(resposta);
+function obterQuizz() {
+    const promise = axios.get(api);
+
+    promise.then((resposta) => mensagens(resposta));
+    promise.catch(mensagens);
 }
+
+function mensagens(mensagem) {
+    infoQuizz = mensagem.data;
+}
+
+const requisição = function criarQuizz() {
+    promise = axios.post(api, infoQuizz);
+};
