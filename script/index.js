@@ -28,11 +28,21 @@ function listquizzes() {
     box.innerHTML = "";
     for (let i = 0; i < quizzes.length; i++) {
         let dataQuizz = quizzes[i];
-        box.innerHTML += ` <div class="box-quiz" id="${dataQuizz.id}">  
+        box.innerHTML += ` <div class="box-quiz" onclick="quizzesFeitos(this)" id="${dataQuizz.id}">  
             <img  width="340px" height="181px" src="${dataQuizz.image}" />
-            <div class="sombra">
+            <div class="degrade">
             <span class="title">${dataQuizz.title}</span>
             </div>
         </div>`;
     }
+}
+
+function quizzesFeitos(element) {
+    let objeto;
+    quizzes.forEach((value) => {
+        if (Number(value.id) === Number(element.id)) {
+            objeto = value;
+        }
+    });
+    console.log(objeto);
 }
