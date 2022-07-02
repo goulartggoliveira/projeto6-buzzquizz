@@ -26,74 +26,200 @@
 
         <!-- tela 1 -->
         <main>
-                <section class="tela-1">
-                    <div class="quizz">
-                        <div class="descrever">
-                            <p class="">Você não criou nenhum quizz ainda :(</p>
-                        </div>
-                        <button class="criar-quizz" onclick="criarQuizz()">
-                            CriarQuizz
-                        </button>
+            <section class="tela-1">
+                <div class="quizz">
+                    <div class="descrever">
+                        <p class="">Você não criou nenhum quizz ainda :(</p>
                     </div>
-                    <div class="meus-quizz escondido">
-                        <div class="meus-quizz-strong">
-                            <strong style="margin-right: 10px"
-                                >Seus Quizzes</strong
-                            >
-                            <img src="imgs/Group 22.svg" />
-                        </div>
-                        <div class="quizz-feitos">
-                            <img class="feito" src="imgs/Group 46.svg" />
-                            <img class="feito" src="imgs/Group 46.svg" />
-                            <img class="feito" src="imgs/Group 46.svg" />
-                        </div>
-                    </div>
-
-                    <div class="todos-quizz">
-                        <strong>Todos os Quizzes</strong>
-                        <div class="caixas-quizz"></div>
-                    </div>
-                </section>
-
-                <section class="tela-2 escondido"></section>
-                <section class="tela-3-1 escondido">
-                    <div class="crie-seu-quizz">
-                        <span>Comece pelo começo </span>
-                    </div>
-
-                    <div class="input-criacao">
-                        <input
-                            type="text"
-                            minlength="20"
-                            maxlength="65"
-                            spellcheck="true"
-                            placeholder="Título do seu quizz"
-                        />
-
-                        <input
-                            type="text"
-                            placeholder="URL da imagem do seu quizz"
-                        />
-
-                        <input
-                            type="number"
-                            placeholder="Quantidade de perguntas do quizz"
-                            name="opções"
-                            min="3"
-                        />
-
-                        <input
-                            type="number"
-                            placeholder="Quantidade de níveis do quizz"
-                            min="3"
-                        />
-                    </div>
-
-                    <button style="cursor: pointer">
-                        Prosseguir pra criar perguntas
+                    <button class="criar-quizz" onclick="criarQuizz()">
+                        CriarQuizz
                     </button>
-                </section>
-            </div>
+                </div>
+                <div class="meus-quizz escondido">
+                    <div class="meus-quizz-strong">
+                        <strong style="margin-right: 10px">Seus Quizzes</strong>
+                        <img src="imgs/Group 22.svg" />
+                    </div>
+                    <div class="quizz-feitos">
+                        <img class="feito" src="imgs/Group 46.svg" />
+                        <img class="feito" src="imgs/Group 46.svg" />
+                        <img class="feito" src="imgs/Group 46.svg" />
+                    </div>
+                </div>
+
+                <div class="todos-quizz">
+                    <strong>Todos os Quizzes</strong>
+                    <div class="caixas-quizz"></div>
+                </div>
+            </section>
+
+            <section class="tela-2 escondido"></section>
+            <section class="tela-3-1 escondido">
+                <div class="crie-seu-quizz">
+                    <span>Comece pelo começo </span>
+                </div>
+
+                <div class="input-criacao">
+                    <input
+                        type="text"
+                        minlength="20"
+                        maxlength="65"
+                        spellcheck="true"
+                        placeholder="Título do seu quizz"
+                    />
+
+                    <input
+                        type="text"
+                        placeholder="URL da imagem do seu quizz"
+                    />
+
+                    <input
+                        type="number"
+                        placeholder="Quantidade de perguntas do quizz"
+                        name="opções"
+                        min="3"
+                    />
+
+                    <input
+                        type="number"
+                        placeholder="Quantidade de níveis do quizz"
+                        min="3"
+                    />
+                </div>
+
+                <button style="cursor: pointer">
+                    Prosseguir pra criar perguntas
+                </button>
+            </section>
+
+            <section class="tela-3-2 escondido">
+                <div class="titulo">
+                    <span>Crie suas perguntas</span>
+                </div>
+
+                <div class="formulario-questoes">
+                    <div class="questoes">
+                        <div class="question">
+                            <div class="subtitulo">
+                                <span>Pergunta 1</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <input
+                                        type="text"
+                                        minlength="20"
+                                        spellcheck="true"
+                                        placeholder="Texto da pergunta"
+                                    />
+                                </li>
+
+                                <li>
+                                    <input
+                                        type="text"
+                                        placeholder="Cor de fundo da pergunta"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="correctAnswer">
+                            <div class="subtitulo">
+                                <span>Resposta correta</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <input
+                                        type="text"
+                                        spellcheck="true"
+                                        placeholder="Resposta correta"
+                                    />
+                                </li>
+
+                                <li>
+                                    <input
+                                        type="text"
+                                        placeholder="URL da imagem"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="respostas-erradas">
+                            <div class="subtitulo">
+                                <span>Respostas incorretas</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <input
+                                        type="text"
+                                        spellcheck="true"
+                                        placeholder="Resposta correta 1"
+                                    />
+                                </li>
+
+                                <li>
+                                    <input
+                                        type="text"
+                                        placeholder="URL da imagem 1"
+                                    />
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input
+                                        type="text"
+                                        spellcheck="true"
+                                        placeholder="Resposta correta 2"
+                                    />
+                                </li>
+
+                                <li>
+                                    <input
+                                        type="text"
+                                        placeholder="URL da imagem 2"
+                                    />
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input
+                                        type="text"
+                                        spellcheck="true"
+                                        placeholder="Resposta correta 3"
+                                    />
+                                </li>
+
+                                <li>
+                                    <input
+                                        type="text"
+                                        placeholder="URL da imagem 3"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="questao-esperando">
+                        <div class="subtitulo">
+                            <span>Pergunta 2</span>
+                        </div>
+                        <div class="icon">
+                            <ion-icon name="create-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="questao-esperando">
+                        <div class="subtitulo">
+                            <span>Pergunta 3</span>
+                        </div>
+                        <div class="icon">
+                            <ion-icon name="create-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <button>Prosseguir pra criar níveis</button>
+                </div>
+            </section>
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
