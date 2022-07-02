@@ -46,3 +46,6 @@ function quizzesFeitos(element) {
     });
     console.log(objeto);
 }
+
+function 
+// alert("Preencha os campos corretamente para continuar criando o seu Quizz.\n\nTítulo do quizz: deve ter no mínimo 20 e no máximo 65 caracteres\nURL da Imagem: deve ter formato de URL\nQuantidade de perguntas: no mínimo 3 perguntas\nQuantidade de níveis: no mínimo 2 níveis");
