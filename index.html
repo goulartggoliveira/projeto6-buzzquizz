@@ -17,77 +17,83 @@
     </head>
     <body>
         <header>
-            <nav><h1 style="cursor: pointer">BuzzQuizz</h1></nav>
+            <nav>
+                <h1 style="cursor: pointer" onclick="recarregarPagina()">
+                    BuzzQuizz
+                </h1>
+            </nav>
         </header>
 
         <!-- tela 1 -->
         <main>
-            <section class="tela-1 escondido">
-                <div class="Quizz escondido">
-                    <div class="descrever">
-                        <p class="">Você não criou nenhum quizz ainda :(</p>
+                <section class="tela-1">
+                    <div class="quizz">
+                        <div class="descrever">
+                            <p class="">Você não criou nenhum quizz ainda :(</p>
+                        </div>
+                        <button class="criar-quizz" onclick="criarQuizz()">
+                            CriarQuizz
+                        </button>
                     </div>
-                    <button class="criar-quizz" onclick="criarQuizz()">
-                        CriarQuizz
+                    <div class="meus-quizz escondido">
+                        <div class="meus-quizz-strong">
+                            <strong style="margin-right: 10px"
+                                >Seus Quizzes</strong
+                            >
+                            <img src="imgs/Group 22.svg" />
+                        </div>
+                        <div class="quizz-feitos">
+                            <img class="feito" src="imgs/Group 46.svg" />
+                            <img class="feito" src="imgs/Group 46.svg" />
+                            <img class="feito" src="imgs/Group 46.svg" />
+                        </div>
+                    </div>
+
+                    <div class="todos-quizz">
+                        <strong>Todos os Quizzes</strong>
+                        <div class="caixas-quizz"></div>
+                    </div>
+                </section>
+
+                <section class="tela-2 escondido"></section>
+                <section class="tela-3-1 escondido">
+                    <div class="crie-seu-quizz">
+                        <span>Comece pelo começo </span>
+                    </div>
+
+                    <div class="input-criacao">
+                        <input
+                            type="text"
+                            minlength="20"
+                            maxlength="65"
+                            spellcheck="true"
+                            placeholder="Título do seu quizz"
+                        />
+
+                        <input
+                            type="text"
+                            placeholder="URL da imagem do seu quizz"
+                        />
+
+                        <input
+                            type="number"
+                            placeholder="Quantidade de perguntas do quizz"
+                            name="opções"
+                            min="3"
+                        />
+
+                        <input
+                            type="number"
+                            placeholder="Quantidade de níveis do quizz"
+                            min="3"
+                        />
+                    </div>
+
+                    <button style="cursor: pointer">
+                        Prosseguir pra criar perguntas
                     </button>
-                </div>
-                <div class="meus-quizz">
-                    <div class="meus-quizz-strong">
-                        <strong style="margin-right: 10px">Seus Quizzes</strong>
-                        <img src="imgs/Group 22.svg" />
-                    </div>
-                    <div class="quizz-feitos">
-                        <img class="feito" src="imgs/Group 46.svg" />
-                        <img class="feito" src="imgs/Group 46.svg" />
-                        <img class="feito" src="imgs/Group 46.svg" />
-                    </div>
-                </div>
-                <div class="todos-quizz">
-                    <strong>Todos os Quizzes</strong>
-                    <div class="caixa-quizz">
-                        <div class="lista-quizz"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tela-2 escondido"></section>
-            <section class="tela-3-1 escondido">
-                <div class="crie-seu-quizz">
-                    <span>Comece pelo começo </span>
-                </div>
-
-                <div class="input-criacao">
-                    <input
-                        type="text"
-                        minlength="20"
-                        maxlength="65"
-                        spellcheck="true"
-                        placeholder="Título do seu quizz"
-                    />
-
-                    <input
-                        type="text"
-                        placeholder="URL da imagem do seu quizz"
-                    />
-
-                    <input
-                        type="number"
-                        placeholder="Quantidade de perguntas do quizz"
-                        name="opções"
-                        min="3"
-                    />
-
-                    <input
-                        type="number"
-                        placeholder="Quantidade de níveis do quizz"
-                        min="3"
-                    />
-                </div>
-
-                <button style="cursor: pointer">
-                    Prosseguir pra criar perguntas
-                </button>
-            </section>
+                </section>
+            </div>
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
